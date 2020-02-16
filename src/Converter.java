@@ -54,6 +54,7 @@ public class Converter {
         String sourceResultFromMorse = new String(sourceAddFromMorse);
         writerLanguageFromMorse.write(Translator.stringToCyrillic(sourceResultFromMorse));
     }
+    
     public static void convertFromMorseToLatin(BufferedReader readerMorseLanguage, BufferedWriter writerLanguageFromMorse) throws IOException {
         String sourceReadMorse= readerMorseLanguage.readLine();
         StringBuilder sourceAddFromMorse = new StringBuilder();
